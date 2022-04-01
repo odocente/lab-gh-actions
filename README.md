@@ -54,13 +54,13 @@ jobs:
     steps:
 
    - name: Checkout repository
-	uses: actions/checkout@v3
-	   - name: Install
-		run: npm ci
-		   - name: Build
-			run: npm run build
-			   - name: Deploy
-				run: npm run deploy
+     uses: actions/checkout@v3
+   - name: Install
+     run: npm ci
+   - name: Build
+     run: npm run build
+   - name: Deploy
+     run: npm run deploy
 ```
 
 - Como falla o *deployment* debemos configurar acceso a repositorio por SSH na máquina virtual: 
